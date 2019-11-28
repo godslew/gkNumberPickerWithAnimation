@@ -18,7 +18,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupView() {
         with(binding) {
-            pick.displayedValues = listOf(1,2,3,4,5,6,7,8,9,10,11).map { it.toString() }.toTypedArray()
+            val list = listOf(1,2,3,4,5,6,7,8,9,10,11).map { it.toString() }.toTypedArray()
+            pick.displayedValues = list
+            pick.minValue = 0
+            pick.maxValue = list.size - 1
             buttonUp.setOnClickListener {
                 pick.animateChange(true)
             }

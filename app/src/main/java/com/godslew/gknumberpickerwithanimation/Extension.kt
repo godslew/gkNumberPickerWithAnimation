@@ -1,6 +1,7 @@
 package com.godslew.gknumberpickerwithanimation
 
 import android.util.Log
+import android.widget.NumberPicker
 
 fun NumberPicker.animateChange(isIncrement: Boolean) {
         try {
